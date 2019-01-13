@@ -29,4 +29,14 @@ describe(`This is the test suite for wednesday`, () => {
 
         })
     })
+    describe(`Return info about a person`, () => {
+        is(`Should return the person object`, () => {
+            const actualResult = factory.returnInfo({ firstName: 'Kostas', lastName: 'Jake', age: 28 });
+            const expectedResult = { firstName: 'Kostas', lastName: 'Jake', age: 28 };
+
+            assert.equal(actualResult, expectedResult);
+
+        })
+
+    })
 })
